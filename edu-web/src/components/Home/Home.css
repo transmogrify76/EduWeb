@@ -1,0 +1,103 @@
+/* Home.css */
+.home-container {
+  display: flex;
+  background-image: url(./edu.jpg);
+  /* margin-top: 30px; */
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+  justify-content: space-between;
+  /* margin-bottom: 40px; */
+}
+
+.home-text {
+  position: absolute;
+  max-width: 70%;
+  top: 35px;
+  left: 30px;
+  color: rgb(0, 0, 0);
+  margin: 40px;
+  /* padding-left: 100px;
+  padding-bottom: 200px; */
+}
+
+/* .home-image img {
+  max-width: 100%;
+  border-radius: 10px;
+} */
+
+.rating-container {
+  position: absolute;
+  left: 150px;
+  bottom: 30px;
+  /* text-align: center; */
+   /* Add margin to separate from the content */
+}
+
+.stars {
+  color: #FFD700; /* Gold color for stars */
+  font-size: 24px;
+}
+
+.rating-text {
+  font-size: 24px;
+  color:white;
+  font-weight: bold;
+}
+
+.rating-description {
+  /* margin-top: 10px; */
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* Animation */
+.rating-animation {
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+/* Home.css */
+
+/* Animation for start-journey text */
+.typing-animation {
+  position: absolute;
+  color: #FFD700;
+  /* background-image: url(./tag.png); */
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  text-align: center;
+  background: linear-gradient(120deg, blue, green);
+  background-size: cover;
+  width: 80%;
+  font-size: 30px;
+  left: -1px;
+  bottom: -50px;
+  display: inline-block;
+  opacity: 0; /* Initially hide characters */
+  animation: leftToRight 2s forwards;
+}
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; /* Initially hidden */
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1; /* Fully visible */
+  }
+}
+
